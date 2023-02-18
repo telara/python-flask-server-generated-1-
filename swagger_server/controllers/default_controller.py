@@ -23,7 +23,6 @@ def add_student(body=None):  # noqa: E501
 
 def delete_student(student_id):  # noqa: E501
     """deletes a student
-
     delete a single student  # noqa: E501
 
     :param student_id: the uid
