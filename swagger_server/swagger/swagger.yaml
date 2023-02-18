@@ -102,13 +102,20 @@ components:
           type: string
         last_name:
           type: string
-        gradeRecord:
+        gradeRecords:
           type: array
           items:
             $ref: '#/components/schemas/GradeRecord'
       example:
         first_name: Django
         last_name: Blue
+        gradeRecords:
+        - subject_name: Maths
+          grade: 8.5
+          summary: Example Grade Record
+        - subject_name: English
+          grade: 8
+          summary: Example Grade Record
     GradeRecord:
       required:
       - grade
@@ -123,8 +130,7 @@ components:
           type: number
           format: float
       example:
-        Maths:
-          subject_name: Maths
-          grade: 8.5
-          summary: Example Grade Record
+        subject_name: English
+        grade: 8.5
+        summary: Example Grade Record
 
